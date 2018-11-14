@@ -1,0 +1,27 @@
+li{
+  list-style: none;
+  border: solid gray 1px;
+  margin:-1px 0;
+
+}
+
+b{
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.textBox,
+.imageBox{
+  display: inline-block;
+}
+
+.imageBox{
+  width: 100px;
+  margin: 10px 20px 10px 10px;
+  border: solid 1px #c0c0c0;
+}
+
+.textBox{
+  vertical-align: top;
+  margin-top: 10px;
+}
