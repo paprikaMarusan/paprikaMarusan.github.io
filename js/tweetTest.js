@@ -11,14 +11,14 @@ tweetsHTML += "</ul>";
 document.querySelector("#answer").innerHTML = tweetsHTML;
 
 
-//ボタンが押されたらanswerの中身を書き換えるやつ
+//ボタンが押されたらanswerの中身を書き換えるやつ(18/11/20時点)
 // function saburo(){
 //   document.querySelector("#answer").innerHTML = "三郎召喚〜";
 //   //書き換える場所の取得.innnerHTML = 書き換える内容
 //   //必要なこと：三郎だけを取り出す
 //}
 
-//全て取り出す
+//全て取り出す関数
 function zenbu(){
   let tweetsHTML = "<ul>";
   let appendTweet = function (twit/*配列の中身*/) {
@@ -29,7 +29,7 @@ function zenbu(){
   document.querySelector("#answer").innerHTML = tweetsHTML;
 }
 
-//三郎だけ取り出す
+//三郎だけ取り出す関数
 function saburo() {
   let tweetsHTML = "<ul>";
   let appendTweet = function (twit/*配列の中身*/) {
@@ -42,7 +42,7 @@ function saburo() {
   document.querySelector("#answer").innerHTML = tweetsHTML;
 }
 
-//太郎だけ取り出す
+//太郎だけ取り出す関数
 function taro() {
   let tweetsHTML = "<ul>";
   let appendTweet = function (twit/*配列の中身*/) {
@@ -55,7 +55,7 @@ function taro() {
   document.querySelector("#answer").innerHTML = tweetsHTML;
 }
 
-//次郎だけ取り出す
+//次郎だけ取り出す関数
 function jiro() {
   let tweetsHTML = "<ul>";
   let appendTweet = function (twit/*配列の中身*/) {
