@@ -1,4 +1,8 @@
 /*太字*/
+body{
+  font-family: sans-serif;
+}
+
 b{
   font-size: 18px;
   margin: 10px 0;
