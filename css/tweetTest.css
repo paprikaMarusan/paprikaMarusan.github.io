@@ -60,7 +60,8 @@ li{
 }
 
 .selectButton:hover{
-  box-shadow: silver 0 0 6px;
+  box-shadow: #cdcdcd 0 0 6px;
+  background-color: #f9f9f9;
 }
 
 .selectButton:active{
