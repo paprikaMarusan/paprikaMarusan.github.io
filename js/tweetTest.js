@@ -18,7 +18,18 @@ document.querySelector("#answer").innerHTML = tweetsHTML;
 //   //必要なこと：三郎だけを取り出す
 //}
 
-//三郎だけ書き換えるやつ
+//全て取り出す
+function zenbu(){
+  let tweetsHTML = "<ul>";
+  let appendTweet = function (twit/*配列の中身*/) {
+    tweetsHTML += `<li> <div class="imageBox"><img src = ${twit.avatar} width="100%"></div> <div class="textBox"> <b>${twit.name}</b> <br> ${twit.message} <br> <i>${twit.tweetedAt}</i></div></li>`;
+  };
+  tweets.forEach(appendTweet);
+  tweetsHTML += "</ul>";
+  document.querySelector("#answer").innerHTML = tweetsHTML;
+}
+
+//三郎だけ取り出す
 function saburo() {
   let tweetsHTML = "<ul>";
   let appendTweet = function (twit/*配列の中身*/) {
@@ -31,7 +42,7 @@ function saburo() {
   document.querySelector("#answer").innerHTML = tweetsHTML;
 }
 
-//太郎だけ書き換えるやつ
+//太郎だけ取り出す
 function taro() {
   let tweetsHTML = "<ul>";
   let appendTweet = function (twit/*配列の中身*/) {
@@ -43,6 +54,8 @@ function taro() {
   tweetsHTML += "</ul>";
   document.querySelector("#answer").innerHTML = tweetsHTML;
 }
+
+//次郎だけ取り出す
 function jiro() {
   let tweetsHTML = "<ul>";
   let appendTweet = function (twit/*配列の中身*/) {
