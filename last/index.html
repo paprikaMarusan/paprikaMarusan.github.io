@@ -89,8 +89,25 @@
     </div>
 
     <!--よくある質問-->
-    <div class="question">
-      <div class="qaSheet">質問内容</div>
+    <div class="qa">
+      <div class="qaSheet">
+
+        <div id="question">
+          <h2>Q.そもそもカラクリウォーズって実際に配信されているんですか？</h2>
+        </div>
+
+        <div id="answer">
+          <p>カラクリウォーズは実際に配信されていません.<br>
+          このサイトは大学の演習で作られたものです.</p>
+      </div>
+
+    </div>
+    </div>
+
+    <div class="questionMove">
+      <li onclick="moveQ1()">&#10102;</li>
+      <li onclick="moveQ2()">&#9313;</li>
+      <li onclick="moveQ3()">&#9314;</li>
     </div>
 
 
@@ -115,16 +132,16 @@
       </div>
 
     </footer>
+    </div>
 
-  </div>
   <!--グリッドレイアウトの終了-->
-
 </main>
 
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 <script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="js/questionMove.js"></script>
 <!--<script type="text/javascript" src="js/news.js"></script>-->
 
 </body>
