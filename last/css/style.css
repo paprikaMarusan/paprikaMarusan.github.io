@@ -9,7 +9,10 @@ a:visited{
   color: white;
 }
 body{
+  position: relative;
   overflow-x: hidden;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
 }
 
 /*メインビジュアル*/
@@ -44,7 +47,6 @@ body{
   right: -200px;
   top:240px;
   display: block;
-
 }
 
 /*メインビジュアル：ロゴ、その他*/
@@ -66,7 +68,7 @@ menu{
   background-color: #1c1d1c;
   color: white;
   bottom: 0;
-  height: 60px;
+  height: 70px;
   width: 100%;
   border-top: solid 2px white;
   padding-top: 10px;
@@ -188,17 +190,25 @@ main{
   margin-right: 5px;
   margin-left: 5px;
   cursor: pointer;
+  transition: all .3s;
+}
+.questionMove li:hover{
+  font-size: 24px;
+  list-style: none;
+  display: inline;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  text-shadow: #d6d6d6 0 0 6px;
 }
 
-
+/*書き換えの際にふわっと表示させるやつ*/
 .qa .qaSheet #question h2,
 .qa .qaSheet #answer p{
   transition: all .3s;
   animation: fadeIn .8s ease 0s 1 normal;
   -webkit-animation: fadeIn .8s ease 0s 1 normal;
 }
-/*書き換えの際にふわっと表示させるやつ*/
-/*liにアニメ設定*/
 @keyframes fadeIn {
   0% {opacity: 0}
   100% {opacity: 1}
@@ -235,12 +245,12 @@ footer .upButton:hover{
   width: 50px;
   height: 50px;
   line-height: 50px;
-  border: solid 6px red;
+  border: solid 6px #ff5233;
   background-color: #1c1d1c;
   font-family: 'Asap', serif;
   font-size: 40px;
   text-align: center;
-  color: red;
+  color: #ff5233;
 }
 footer .upButton a,
 footer .upButton a:visited{
