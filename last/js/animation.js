@@ -45,3 +45,4 @@ const logp = anime({ //logo
   easing: 'easeInOutQuad',
   opacity: [0,1],
 });
+
