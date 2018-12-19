@@ -185,8 +185,8 @@ main{
 }
 
 
-#question h2,
-#answer p{
+.qa .qaSheet #question h2,
+.qa .qaSheet #answer p{
   transition: all .3s;
   animation: fadeIn .8s ease 0s 1 normal;
   -webkit-animation: fadeIn .8s ease 0s 1 normal;
