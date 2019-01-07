@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <!--CSSの読み込み-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalise.css">
+  <!--CSSの読み込みここまで-->
+
+  <!--フォントの読み込み-->
+  <link href="https://fonts.googleapis.com/css?family=Asap|Rajdhani" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100" rel="stylesheet">
+  <!--フォントの読み込みここまで-->
+  <title>カラクリウォーズ</title>
+
+</head>
+<body>
+<!--トップ画像のエリア-->
+<div id="top">
+
+  <!--背景の設定-->
+  <div class="backImage">
+    <img src="images/top.png" alt="背景">
+  </div>
+
+  <!--キャラクター画像の設定-->
+  <div class="characterImage">
+
+    <div class="rei">
+      <img src="images/rei.png" width="540" id="rei">
+    </div>
+
+    <div class="mimil">
+      <img src="images/mimil.png" width="560" id="mimil">
+    </div>
+
+    <div class="hirona">
+      <img src="images/hirona.png" width="600" id="hirona">
+    </div>
+
+    <div id="nav-drawer">
+
+      <div class="giarNav">
+        <img src="images/hamburger_nav.png" width="212" height="164" id="giarNav">
+      </div>
+
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+
+      <div id="nav-content">
+        <ul>
+          <li><a href="#">Top</a></li>
+          <li><a href="#character">Character</a></li>
+          <li><a href="#world">World</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="git">
+      <a href="https://github.com/paprikaMarusan" target="_blank"><img src="images/Github_banner.png" width="231" height="64" id="git"></a>
+    </div>
+
+    <div class="twi">
+      <a href="https://twitter.com/kiiro_no_hoshi" target="_blank"><img src="images/Twitter_banner.png" width="231" height="64" id="twi"></a>
+    </div>
+
+    <div class="catchCopy">
+      <img src="images/catchCopy.png" width="600" id="catchCopy">
+    </div>
+
+    <div class="logo">
+      <img src="images/logo.png" width="620" id="logo">
+    </div>
+
+  </div>
+</div>
+
+
+<!--メインコンテンツ-->
+<main>
+  <div class="giar1">
+    <img src="images/giar1.png" width="200" height="200">
+  </div>
+  <div class="giar2">
+    <img src="images/giar2.png" width="200" height="200">
+  </div>
+  <!--グリッドレイアウト開始-->
+  <div id="container">
+
+    <!--お知らせ欄-->
+    <div class="newsTextImage"><img src="images/news_text.png"></div>
+
+    <div class="news">
+      <div id="sheet"><!--Googleスプレッドシートで管理--></div>
+    </div>
+
+    <!--最新バージョン情報-->
+    <div class="version">
+      <img src="images/version.png">
+    </div>
+
+    <!--カラクリウォーズのキャラクターたち-->
+    <div class="character-midashi" id="character">
+      <img  src="images/character.png">
+    </div>
+
+    <div class="back_C">
+      <img src="images/back_c.png">
+    </div>
+
+    <div class="character">
+      <img src="images/hirona_unit.png">
+    </div>
+
+    <div class="character-caption">
+      <div class="characterName"><h1><span>ヒロナ</span></h1></div>
+
+      <div class="characterAbility"><p><span>水属性ガンナー｜17歳｜武器：アクアキャノン</span></p></div>
+      <hr style="margin-top: 10px;margin-bottom: 10px" color="#222222">
+
+      <div class="characterProfile"><p><span>街を守る警備組織 [カラクリナイツ] の一員.<br>
+      興味のあること以外は無関心だが、<br>
+      頼まれた仕事はしっかりやっているようだ.<br>
+        音楽好きでいつもヘッドフォンを持ち歩いている.<br><br></span></p>
+
+      <p><span>「…音楽を楽しく聴くには、街が平和じゃないとね」</span></p>
+      </div>
+
+    </div>
+
+    <div class="characterMove">
+      <img src="images/mimil_charaparts_active.png" onclick="changeLuke()"><img src="images/hirona_charaparts.png" onclick="changeHirona()"><img src="images/mimil_charaparts.png" onclick="changeKana()"><img src="images/mimil_charaparts.png" onclick="changeMichelle()"><img src="images/mimil_charaparts.png" onclick="changeLeonard()">
+    </div>
+
+    <div class="world-midashi" id="world">
+      <img src="images/world.png">
+    </div>
+
+    <div class="back_W">
+      <img src="images/back_w.png">
+    </div>
+
+    <div class="world">
+      <h2><span>さまざまな派閥が争うカラクリアリーナで、<br>
+        No.1を目指せ！</span></h2>
+
+      <p><br><span>科学と機械の発展によって生み出されたエンタメ武器 [カラクリ] が流行り始めて早数年...<br>
+        ポップでちょっぴりクレイジーな街 [グルービータウン] には、<br>
+        様々な派閥が争いカラクリ使いNo.1を決めるアリーナがあった！<br>
+        <br>
+        個人、タッグ、ギルド...あらゆる方法で頂点を目指せ！</span></p>
+    </div>
+    <div class="UI-mockUp">
+      <img src="images/UI.png">
+    </div>
+
+    <div class="back">
+      <img src="images/back.png">
+    </div>
+    <!--よくある質問-->
+    <div class="qa">
+      <h1>Question?</h1>
+      <div class="qaSheet">
+
+        <div id="question">
+          <h2>Q.カラクリウォーズって実際に配信されているんですか？</h2>
+        </div>
+
+        <div id="answer">
+          <p>カラクリウォーズは実際に配信されていません.<br>
+            このサイトは大学の演習で "ゲーム公式サイト風" に作られたものです.</p>
+        </div>
+
+      </div>
+
+    <div class="questionMove">
+      <li onclick="moveQ1()">&#10102;</li>
+      <li onclick="moveQ2()">&#9313;</li>
+      <li onclick="moveQ3()">&#9314;</li>
+    </div>
+    </div>
+
+    <!--フッター-->
+    <div class="footerButton">
+      <div class="upButton"><a href="#" class="button-up">↑</a></div>
+    </div>
+    <footer>
+      <img src="images/image_appIcon.png" width="120" height="120">
+      <p>●タイトル：カラクリウォーズ<br>
+        ●想定ジャンル：最強の相棒で戦う！バトルアクション<br>
+        ●想定価格：基本無料(一部課金あり)<br>
+        ●想定プラットフォーム：Android, iOS</p>
+
+      <div class="announce">
+        <li>個人情報保護方針</li>
+        <li>お問い合わせ</li>
+        <li>プライバシーポリシー</li>
+        <li>利用規約</li>
+        <li>特定商取引法に基づく表示</li>
+        <li>資金決済法に基づく表示</li>
+      </div>
+
+      <div class="copyRight">
+        <p class="copyRight">
+          このホームページに掲載されている一切の文書・図版・写真等を手段や形態を問わず複製、転載することを禁じます.<br>
+          ©2018　カラクリウォーズ　Yu-ki.</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <!--グリッドレイアウトの終了-->
+</main>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="js/switching.js"></script>
+<!--<script type="text/javascript" src="js/news.js"></script>-->
+</body>
+</html>

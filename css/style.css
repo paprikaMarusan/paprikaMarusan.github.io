@@ -1,0 +1,525 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+body{
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Rajdhani', 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+}
+span{
+  background-color: #222222;
+}
+/*メインビジュアル*/
+#top{
+}
+
+#top .backImage {/*一番後ろの背景*/
+  margin-left: auto;
+  margin-right: auto;
+}
+#top .backImage img {
+  height: 790px;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 0;
+}
+/*メインビジュアル：キャラクター*/
+#top .characterImage .rei {
+  position: absolute;
+  right: -180px;
+  top:-20px;
+  display: block;
+}
+#top .characterImage .mimil {
+  position: absolute;
+  right: -220px;
+  top: 100px;
+  display: block;
+}
+#top .characterImage .hirona {
+  position: absolute;
+  right: -200px;
+  top:350px;
+  display: block;
+}
+
+/*メインビジュアル：ナビ、ロゴ、その他バナー*/
+#top .characterImage .giarNav{
+  position: fixed;
+  right: 0;
+  top:0;
+  display: block;
+  transition: all .3s;
+}
+#top .characterImage .giarNav img{
+  z-index: 100;
+}
+#top .characterImage .catchCopy  {
+  position: absolute;
+  left: 20px;
+  top:130px;
+  display: block;
+}
+#top .characterImage .logo {
+  position: absolute;
+  left: 20px;
+  top:350px;
+  display: block;
+}
+#top .characterImage .git{
+  position: fixed;
+  right: -176px;
+  top:210px;
+  display: block;
+  z-index: 4;
+  transition: all .5s;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.3));
+}
+#top .characterImage .twi{
+  position: fixed;
+  right: -176px;
+  top:290px;
+  display: block;
+  z-index: 4;
+  transition: all .5s;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.3));
+}
+#top .characterImage .git:hover,
+#top .characterImage .twi:hover{
+  right: -10px;
+}
+
+/*メインコンテンツの土台*/
+main{
+  position: relative;
+  padding-top: 100px;
+  background-color: #f9f9f9;
+  z-index: 0;
+}
+.giar1{
+  position: absolute;
+  z-index: -1;
+}
+.giar2{
+  position: absolute;
+  top: 1800px;
+  right: 0;
+  z-index: -1;
+}
+
+#nav-drawer {
+  position: fixed;
+  z-index: 101;
+  top: 46px;
+  right:19px;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコン*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 6px;/*太さ*/
+  width: 42px;/*長さ*/
+  border-radius: 2px;
+  background: #080808;
+  display: block;
+  content: '';
+  cursor: pointer;
+  transition: all .6s;
+}
+#nav-open span:before {
+  transform: translateY(-14px);
+}
+#nav-open span:after {
+  transform: translateY(14px);
+}
+
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: -2;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  position: fixed;
+  text-align: right;
+  top: 0;
+  left: 0;
+  z-index: -1;/*最前面に*/
+  width: 100%;
+  max-width: 100%;/*最大幅（調整してください）*/
+  height: 90px;
+  background: #fff;/*背景色*/
+  border-bottom: #e4593a 15px solid;
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);/*上に隠しておく*/
+}
+#nav-content li{
+  position: relative;
+  margin-right: 100px;
+  right: 200px;
+  list-style: none;
+  display: inline;
+  line-height: 100px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 24px;
+}
+#nav-content a{
+  color: #222222;
+  transition: all .3s;
+}
+#nav-content a:hover{
+  color: #e4593a;
+}
+/*チェックが入ったら表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .3;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+/*バツアニメ*/
+#nav-input:checked ~ #nav-open span{
+  background: rgba(255, 255, 255, 0);
+}
+#nav-input:checked ~ #nav-open span:before{
+  transform: rotate(45deg) translateY(0px);
+}
+#nav-input:checked ~ #nav-open span:after{
+  transform: rotate(-45deg) translateY(0px);
+}
+
+/*CSSグリッド*/
+#container{
+  margin-top: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid; /*グリッドレイアウトにする設定*/
+  grid-auto-rows: 60px/*TOPからの余白*/ 40px/*News見出し*/ 240px/*お知らせとバージョン*/ 200px/*余白*/ 80px/*キャラクター見出し*/ 500px/*キャラ画像と説明用*/ 120px/*キャラ切り替え用*/ 200px/*余白*/ 80px/*世界観見出し用*/ 300px/*世界観説明用*/ 50px/*背景用*/ 300px/*モックアップ表示用*/ 200px/*余白*/ 500px/*質問*/ 40px/*余白*/ 30px 30px 450px/*フッター*/;
+  grid-auto-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; /*frは残りの幅*/
+}
+
+.newsTextImage{
+  grid-row: 2;
+  grid-column: 2 / 7;
+}
+.newsTextImage img{
+  margin-top: 1px;
+  height: 100%;
+}
+.news{
+  grid-row: 3;
+  grid-column: 2 / 7;
+  background-color: white;
+  border: solid 12px #f5c51d;
+}
+.news #sheet ul{
+  padding: 20px;
+}
+.news #sheet li{
+  list-style: none;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.version {
+  grid-row: 3;
+  grid-column: 7 / 10;
+  text-align: right;
+}
+.version img{
+  height: 100%;
+}
+
+/*キャラクター*/
+
+.character-midashi{
+  grid-row: 5;
+  grid-column: 2 / 6;
+}
+.character-midashi img{
+  height: 100%;
+}
+.back_C{
+  grid-row: 6 / 7;
+  grid-column: 8 / 11;
+  text-align: right;
+  z-index: -1;
+}
+.back_C img{
+  position: relative;
+  height: 100%;
+}
+.character{
+  grid-row: 6;
+  grid-column: 2 / 6;
+  text-align: center;
+}
+.character img{
+  height: 100%;
+}
+.character-caption{
+  grid-row: 6;
+  grid-column: 6 / 10;
+}
+.character-caption h1,
+.character-caption p{
+  color: white;
+  text-align: right;
+}
+
+.characterMove{
+  grid-row: 7;
+  grid-column: 2 / 10;
+  text-align: right;
+}
+.characterMove img{
+  height: 100%;
+  margin-left: 15px;
+  cursor: pointer;
+}
+/*書き換えの際にふわっと表示させるやつ*/
+.character-caption h1,
+.character-caption p,
+.character img{
+  transition: all .3s;
+  animation: fadeIn .8s ease 0s 1 normal;
+  -webkit-animation: fadeIn .8s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+/*セカイカン*/
+.world-midashi{
+  grid-row: 9;
+  grid-column: 6 / 10;
+  text-align: right;
+}
+.world-midashi img{
+  height: 100%;
+}
+.back_W{
+  grid-row: 10 / 13;
+  grid-column: 1 / 5;
+  z-index: -1;
+}
+.back_W img{
+  height: 100%;
+}
+.world{
+  grid-row: 10;
+  grid-column: 2/10;
+}
+.world h2,
+.world p{
+  color: white;
+  text-align: left;
+}
+.UI-mockUp{
+  grid-row: 11 / 13;
+  grid-column: 2 / 10;
+  text-align: center;
+}
+.UI-mockUp img{
+  height: 100%;
+  transition: all .4s;
+}
+.UI-mockUp img:hover {
+  transform: scale(1.12);
+  height: 100%;
+}
+
+.back{
+  grid-row: 10 / 14;
+  grid-column: 1 / 11;
+  z-index: -2;
+}
+.back img{
+  height: 100%;
+  position: relative;
+  top: 210px;
+}
+/*よくある質問*/
+.qa{
+  grid-row: 14;
+  grid-column: 1 / 11;
+  text-align: center;
+  background-color: #9BD1DE;
+}
+.qa h1{
+  color: white;
+}
+.qa .qaSheet{
+  width: 70%;
+  height: 260px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 10px 10px 2px 2px;
+}
+.qa .qaSheet #question{
+  height: 50px;
+  background-color: #ff5233;
+  border-radius: 10px 10px 0 0;
+}
+.qa .qaSheet #question h2{
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+.qa .qaSheet #answer{
+  padding: 30px;
+  transition: all .2s;
+}
+.qa .qaSheet #answer a{
+  color: #ff5233;
+  transition: all .3s;
+}
+.qa .qaSheet #answer a:hover{
+  opacity: .6;
+}
+.questionMove{
+  grid-row: 6;
+  grid-column: 2 / 5;
+  text-align: center;
+}
+.questionMove li{
+  font-size: 24px;
+  list-style: none;
+  display: inline;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all .3s;
+  color: white;
+}
+.questionMove li:hover{
+  font-size: 24px;
+  list-style: none;
+  display: inline;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  text-shadow: #d6d6d6 0 0 6px;
+}
+
+/*書き換えの際にふわっと表示させるやつ*/
+.qa .qaSheet #question h2,
+.qa .qaSheet #answer p{
+  transition: all .3s;
+  animation: fadeIn .8s ease 0s 1 normal;
+  -webkit-animation: fadeIn .8s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+/*フッター*/
+.footerButton{
+  grid-column: 1 / 11;
+  grid-row: 16 / 18;
+  z-index: 5;
+}
+.upButton{
+  width: 60px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 6px white;
+  background-color: #1c1d1c;
+  font-family: 'Asap', serif;
+  font-size: 40px;
+  text-align: center;
+  transition: all .3s;
+}
+.upButton:hover{
+  width: 60px;
+  height: 60px;
+  border: solid 6px #ff5233;
+  background-color: #1c1d1c;
+  font-family: 'Asap', serif;
+  font-size: 40px;
+  text-align: center;
+  color: #ff5233;
+}
+.upButton a,
+.upButton a:visited{
+  text-decoration: none;
+  color: white;
+}
+.button-up {
+  display: block;
+  text-align: center;
+}
+footer{
+  grid-row: 17 / 19;
+  grid-column: 1 / 11;
+  background-color: #1c1d1c;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+footer img{
+  margin: 10px auto;
+}
+footer .announce{
+  margin-top: 40px;
+}
+footer .announce li{
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+footer .copyRight{
+  margin-top: 50px;
+}
