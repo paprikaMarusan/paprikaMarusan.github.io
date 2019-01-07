@@ -8,7 +8,7 @@ fetch("https://sheets.googleapis.com/v4/spreadsheets/1ExGxj07uwHxG2oINmWPZsh69vE
       console.log(json);
 
       json.values.forEach( row => {
-            html += `<li>${row[0]}</li> <li>${column[1]}</li>`;
+            html += `<li>${sheet1}</li>`;
           }
       );
 

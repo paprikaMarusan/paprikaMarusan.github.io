@@ -1,5 +1,5 @@
 /* PC用CSS */
-@media print, screen and (min-width: 800px) {
+@media print, screen and (min-width: 700px) {
 
   * {
     margin: 0;
