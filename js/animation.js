@@ -1,6 +1,6 @@
-const rei = anime({ //rei
-  targets: '#rei',
-  translateX: '-30px',
+const kana = anime({ //kana
+  targets: '#kana',
+  translateX: '-60px',
   duration: 1000,
   loop: false,
   direction: 'alternate',
@@ -38,7 +38,7 @@ const hirona = anime({ //hirona
   opacity: [0,1],
 });
 
-const catchCopy = anime({ //logo
+const catchCopy = anime({ //catchCopy
   targets: '#catchCopy',
   duration: 1500,
   loop: false,

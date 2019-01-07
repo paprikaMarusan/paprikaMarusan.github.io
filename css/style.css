@@ -70,9 +70,9 @@
   }
 
   /*メインビジュアル：キャラクター*/
-  #top .characterImage .rei {
+  #top .characterImage .kana {
     position: absolute;
-    right: 0;
+    right: 80px;
     top: -20px;
     display: block;
   }
@@ -97,8 +97,8 @@
     top: 350px;
     display: block;
   }
-  .reiSize{
-    width: 520px;
+  .kanaSize{
+    width: 540px;
   }
   .mimilSize{
     width: 400px;

@@ -64,10 +64,10 @@
   }
 
   /*メインビジュアル：キャラクター*/
-  #top .characterImage .rei {
+  #top .characterImage .kana {
     position: absolute;
     right: 0;
-    top: -20px;
+    top: -10px;
     display: block;
   }
   #top .characterImage .mimil {
@@ -88,7 +88,7 @@
     top: 250px;
     display: block;
   }
-  .reiSize{
+  .kanaSize{
     width: 420px;
   }
   .mimilSize{
@@ -591,7 +591,7 @@
     grid-row: 22 / 24;
     grid-column: 1 / 11;
     background-color: #1c1d1c;
-    font-size: 11px;
+    font-size: 9px;
     text-align: center;
     color: white;
     padding-top: 100px;

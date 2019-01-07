@@ -41,7 +41,7 @@ function changeHirona(){
 function changeKana(){
   document.querySelector('.character').innerHTML = `<img src="images/mimil_unit.png">`;
   document.querySelector('.characterName').innerHTML = `<h1><span>カナ</span></h1>`;
-  document.querySelector('.characterAbility').innerHTML = `<p><span>風属性ヒーラー｜25歳｜カラクリ：ヒーリングライト</span></p>`;
+  document.querySelector('.characterAbility').innerHTML = `<p><span>風属性ヒーラー｜25歳｜カラクリ：ヒーリングボム</span></p>`;
   document.querySelector('.characterProfile').innerHTML = `<p><span>街外れにある教会のシスター.<br>優しく、マイペースな性格.<br>気まぐれに触ったカラクリに興味を持ち、のめり込んだ.<br>カラクリ片手に戦うというのは<br>シスター的にどうなのかと周りは思っているが、<br>マイペースな彼女はあまり気にしていないようだ.<br><br></span></p><p><span>「」</span></p>`;
   document.querySelector('.characterMove').innerHTML = `      <img src="images/mimil_charaparts.png" onClick="changeLuke()"><img src="images/hirona_charaparts.png" onClick="changeHirona()"><img src="images/mimil_charaparts_active.png" onClick="changeKana()"><img src="images/mimil_charaparts.png" onClick="changeMichelle()"><img src="images/mimil_charaparts.png" onClick="changeLeonard()">
 `;
