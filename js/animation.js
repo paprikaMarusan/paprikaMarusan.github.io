@@ -1,6 +1,26 @@
+const rei = anime({ //rei
+  targets: '#rei',
+  translateX: '-30px',
+  duration: 1000,
+  loop: false,
+  direction: 'alternate',
+  easing: 'easeInOutQuad',
+  opacity: [0,1],
+});
+
 const mimil = anime({ //mimil
   targets: '#mimil',
   translateY: '40px',
+  duration: 1000,
+  loop: false,
+  direction: 'alternate',
+  easing: 'easeInOutQuad',
+  opacity: [0,1],
+});
+
+const leonard = anime({ //leonard
+  targets: '#leonard',
+  translateX: '-20px',
   duration: 1000,
   loop: false,
   direction: 'alternate',
@@ -18,16 +38,6 @@ const hirona = anime({ //hirona
   opacity: [0,1],
 });
 
-const rei = anime({ //rei
-  targets: '#rei',
-  translateX: '-30px',
-  duration: 1000,
-  loop: false,
-  direction: 'alternate',
-  easing: 'easeInOutQuad',
-  opacity: [0,1],
-});
-
 const catchCopy = anime({ //logo
   targets: '#catchCopy',
   duration: 1500,
@@ -38,8 +48,8 @@ const catchCopy = anime({ //logo
 });
 const logp = anime({ //logo
   targets: '#logo',
-  translateY: '10px',
-  duration: 1500,
+  translateY: '40px',
+  duration: 1000,
   loop: false,
   direction: 'alternate',
   easing: 'easeInOutQuad',

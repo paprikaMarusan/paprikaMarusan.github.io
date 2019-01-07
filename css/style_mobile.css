@@ -60,11 +60,7 @@
   }
 
   #top .backImage img {
-    height: 600px;
-    position: relative;
     z-index: -1;
-    margin-bottom: 0;
-
   }
 
   /*メインビジュアル：キャラクター*/
@@ -74,20 +70,43 @@
     top: -20px;
     display: block;
   }
-
   #top .characterImage .mimil {
     position: absolute;
     right: 0;
+    top: 30px;
+    display: block;
+  }
+  #top .characterImage .leonard {
+    position: absolute;
+    right: 10px;
     top: 20px;
     display: block;
   }
-
   #top .characterImage .hirona {
     position: absolute;
     right: 0;
     top: 250px;
     display: block;
   }
+  .reiSize{
+    width: 420px;
+  }
+  .mimilSize{
+    width: 300px;
+  }
+  .leonardSize{
+    width: 300px;
+  }
+  .hironaSize{
+    width: 380px;
+  }
+  .logoSize{
+    width: 90%;
+  }
+  .catchCopySize{
+    width: 80%;
+  }
+
 
   /*メインビジュアル：メニュー、ロゴ、その他バナー*/
   #top .characterImage .giarNav {
@@ -105,8 +124,9 @@
   #top .characterImage .catchCopy {
     position: absolute;
     left: 20px;
-    top: 280px;
+    top: 430px;
     display: block;
+    margin-left: 4%;
   }
 
   #top .characterImage .logo {
@@ -161,14 +181,14 @@
 
   .back_C {
     grid-row: 9 / 11;
-    grid-column: 6 / 11;
+    grid-column: 7 / 11;
     text-align: right;
     z-index: -1;
   }
 
   .back_C img {
     position: relative;
-    height: 100%;
+    width: 100%;
   }
 
   .back_W {
@@ -190,7 +210,7 @@
   .back img {
     width: 100%;
     position: relative;
-    top: 160px;
+    top: 100px;
   }
 
   /*メニュー*/
@@ -405,7 +425,7 @@
   }
 
   .characterMove img {
-    height: 60%;
+    height: 56%;
     margin-left: 8px;
     cursor: pointer;
   }

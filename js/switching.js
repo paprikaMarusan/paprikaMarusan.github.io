@@ -7,7 +7,7 @@ function moveQ1(){
 
 function moveQ2(){
   document.querySelector('#question').innerHTML = `<h2>Q.このサイトを作った人は誰ですか？</h2>`;
-  document.querySelector('#answer').innerHTML = `<p>なんと右側のTwitterバナーから作者の<a href="https://twitter.com/kiiro_no_hoshi" target="_blank">Twitter</a>に飛べてしまうんです！</p>`;
+  document.querySelector('#answer').innerHTML = `<p>なんとここに作者の<a href="https://twitter.com/kiiro_no_hoshi" target="_blank">Twitter</a>が...！</p>`;
   document.querySelector('.questionMove').innerHTML = `<li onclick="moveQ1()">&#9312;</li> <li onclick="moveQ2()">&#10103;</li> <li onclick="moveQ3()">&#9314;</li>`;
 }
 
