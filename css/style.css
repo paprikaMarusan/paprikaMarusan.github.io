@@ -179,21 +179,21 @@
   /*背景画像*/
   .giar1 {
     position: absolute;
-    z-index: -1;
+    z-index: -5;
   }
 
   .giar2 {
     position: absolute;
     top: 1800px;
     right: 0;
-    z-index: -1;
+    z-index: -5;
   }
 
   .back_C {
     grid-row: 6 / 7;
     grid-column: 8 / 11;
     text-align: right;
-    z-index: -1;
+    z-index: -2;
   }
 
   .back_C img {
@@ -204,7 +204,7 @@
   .back_W {
     grid-row: 10 / 13;
     grid-column: 1 / 5;
-    z-index: -1;
+    z-index: -2;
   }
 
   .back_W img {
@@ -214,7 +214,7 @@
   .back {
     grid-row: 10 / 14;
     grid-column: 1 / 11;
-    z-index: -2;
+    z-index: -5;
   }
 
   .back img {

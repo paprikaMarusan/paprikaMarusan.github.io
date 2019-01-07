@@ -169,21 +169,21 @@
   /*背景画像*/
   .giar1 {
     position: absolute;
-    z-index: -1;
+    z-index: -5;
   }
 
   .giar2 {
     position: absolute;
     top: 1800px;
     right: 0;
-    z-index: -1;
+    z-index: -5;
   }
 
   .back_C {
     grid-row: 9 / 11;
     grid-column: 7 / 11;
     text-align: right;
-    z-index: -1;
+    z-index: -2;
   }
 
   .back_C img {
@@ -194,7 +194,7 @@
   .back_W {
     grid-row: 14 / 17;
     grid-column: 1 / 6;
-    z-index: -1;
+    z-index: -2;
   }
 
   .back_W img {
@@ -204,7 +204,7 @@
   .back {
     grid-row: 15 / 17;
     grid-column: 1 / 11;
-    z-index: -2;
+    z-index: -5;
   }
 
   .back img {
@@ -216,7 +216,7 @@
   /*メニュー*/
   #nav-drawer {
     position: fixed;
-    z-index: 101;
+    z-index: 100;
     top: 31px;
     right: 0;
   }
@@ -366,8 +366,8 @@
     list-style: none;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 11px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 
   .news #sheet li span {
