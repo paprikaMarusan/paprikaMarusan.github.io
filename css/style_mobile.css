@@ -210,7 +210,7 @@
   .back img {
     width: 100%;
     position: relative;
-    top: 200px;
+    top: 220px;
   }
 
   /*メニュー*/
@@ -425,7 +425,7 @@
   }
 
   .characterMove img {
-    height: 56%;
+    height: 52%;
     margin-left: 8px;
     cursor: pointer;
   }
