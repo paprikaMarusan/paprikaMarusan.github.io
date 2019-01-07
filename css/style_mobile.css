@@ -193,7 +193,7 @@
 
   .back_W {
     grid-row: 14 / 17;
-    grid-column: 1 / 9;
+    grid-column: 1 / 6;
     z-index: -1;
   }
 
@@ -210,7 +210,7 @@
   .back img {
     width: 100%;
     position: relative;
-    top: 100px;
+    top: 200px;
   }
 
   /*メニュー*/
