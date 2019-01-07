@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!--文字コードとIE用の設定-->
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--レスポンシブ-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!--サイト説明-->
+  <meta name="description" content="架空スマートフォン向けバトルアクションゲーム[カラクリウォーズ]！！最強の相棒で頂点を目指せ！※このサイトは大学演習で制作されたものです.レスポンシブ対応済">
+
+  <!--ファビコン-->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
 
   <!--CSSの読み込み-->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="(max-width: 800px)" href="css/style_mobile.css">
   <link rel="stylesheet" href="css/normalise.css">
   <!--CSSの読み込みここまで-->
 
   <!--フォントの読み込み-->
   <link href="https://fonts.googleapis.com/css?family=Asap|Rajdhani" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100" rel="stylesheet">
-  <!--フォントの読み込みここまで-->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,900" rel="stylesheet">
+
+  <!--サイトタイトル-->
   <title>カラクリウォーズ</title>
 
 </head>
 <body>
+
 <!--トップ画像のエリア-->
 <div id="top">
 
@@ -42,7 +57,7 @@
     <div id="nav-drawer">
 
       <div class="giarNav">
-        <img src="images/hamburger_nav.png" width="212" height="164" id="giarNav">
+        <img src="images/hamburger_nav.png" id="giarNav" class="navImage">
       </div>
 
       <input id="nav-input" type="checkbox" class="nav-unshown">
@@ -60,11 +75,11 @@
     </div>
 
     <div class="git">
-      <a href="https://github.com/paprikaMarusan" target="_blank"><img src="images/Github_banner.png" width="231" height="64" id="git"></a>
+      <a href="https://github.com/paprikaMarusan" target="_blank"><img src="images/Github_banner.png" class="snsBanner" id="git"></a>
     </div>
 
     <div class="twi">
-      <a href="https://twitter.com/kiiro_no_hoshi" target="_blank"><img src="images/Twitter_banner.png" width="231" height="64" id="twi"></a>
+      <a href="https://twitter.com/kiiro_no_hoshi" target="_blank"><img src="images/Twitter_banner.png" class="snsBanner" id="twi"></a>
     </div>
 
     <div class="catchCopy">
@@ -76,33 +91,38 @@
     </div>
 
   </div>
+
 </div>
 
 
 <!--メインコンテンツ-->
 <main>
+
+  <!--背景の歯車-->
   <div class="giar1">
-    <img src="images/giar1.png" width="200" height="200">
+    <img src="images/giar1.png" class="giarImage1">
   </div>
+
   <div class="giar2">
-    <img src="images/giar2.png" width="200" height="200">
+    <img src="images/giar2.png" class="giarImage1">
   </div>
+
   <!--グリッドレイアウト開始-->
   <div id="container">
 
-    <!--お知らせ欄-->
+    <!--お知らせ-->
     <div class="newsTextImage"><img src="images/news_text.png"></div>
 
     <div class="news">
       <div id="sheet"><!--Googleスプレッドシートで管理--></div>
     </div>
 
-    <!--最新バージョン情報-->
+    <!--ツイッター連携-->
     <div class="version">
-      <img src="images/version.png">
-    </div>
+      <!--<img src="images/version.png">-->
+      <a class="twitter-timeline" data-width="100%" data-height="270" data-theme="dark" data-link-color="#FAB81E" href="https://twitter.com/KarakuriWars?ref_src=twsrc%5Etfw">Tweets by KarakuriWars</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    </div>
 
-    <!--カラクリウォーズのキャラクターたち-->
+      <!--キャラクター-->
     <div class="character-midashi" id="character">
       <img  src="images/character.png">
     </div>
@@ -116,25 +136,35 @@
     </div>
 
     <div class="character-caption">
-      <div class="characterName"><h1><span>ヒロナ</span></h1></div>
 
-      <div class="characterAbility"><p><span>水属性ガンナー｜17歳｜武器：アクアキャノン</span></p></div>
+      <div class="characterName">
+        <h1><span>ルーク</span></h1>
+      </div>
+
+      <div class="characterAbility">
+        <p><span>炎属性ファイター｜19歳｜カラクリ：フレイムナックル</span></p>
+      </div>
+
       <hr style="margin-top: 10px;margin-bottom: 10px" color="#222222">
 
-      <div class="characterProfile"><p><span>街を守る警備組織 [カラクリナイツ] の一員.<br>
-      興味のあること以外は無関心だが、<br>
-      頼まれた仕事はしっかりやっているようだ.<br>
-        音楽好きでいつもヘッドフォンを持ち歩いている.<br><br></span></p>
-
-      <p><span>「…音楽を楽しく聴くには、街が平和じゃないとね」</span></p>
+      <div class="characterProfile">
+        <p><span>街を守る警備組織 [カラクリナイツ] の一員.<br>
+          何事にも全力で情に厚い男.<br>
+          同期のヒロナや周囲からは「熱血すぎ」と呆れられがち.<br>
+          本人はそんなことを意に介さず、<br>
+          今日もカラクリ片手に街の平和を守り抜く！<br><br></span></p>
+        <p><span>「街の平和を乱すのはどこのどいつだ！」</span></p>
       </div>
 
     </div>
 
+    <!--キャラクター切り替え-->
     <div class="characterMove">
       <img src="images/mimil_charaparts_active.png" onclick="changeLuke()"><img src="images/hirona_charaparts.png" onclick="changeHirona()"><img src="images/mimil_charaparts.png" onclick="changeKana()"><img src="images/mimil_charaparts.png" onclick="changeMichelle()"><img src="images/mimil_charaparts.png" onclick="changeLeonard()">
     </div>
 
+
+    <!--世界観-->
     <div class="world-midashi" id="world">
       <img src="images/world.png">
     </div>
@@ -153,6 +183,8 @@
         <br>
         個人、タッグ、ギルド...あらゆる方法で頂点を目指せ！</span></p>
     </div>
+
+    <!--mock-up-->
     <div class="UI-mockUp">
       <img src="images/UI.png">
     </div>
@@ -160,13 +192,15 @@
     <div class="back">
       <img src="images/back.png">
     </div>
+
     <!--よくある質問-->
     <div class="qa">
       <h1>Question?</h1>
+
       <div class="qaSheet">
 
         <div id="question">
-          <h2>Q.カラクリウォーズって実際に配信されているんですか？</h2>
+          <h2>Q.ゲームは実際に配信されてますか？</h2>
         </div>
 
         <div id="answer">
@@ -176,19 +210,22 @@
 
       </div>
 
-    <div class="questionMove">
-      <li onclick="moveQ1()">&#10102;</li>
-      <li onclick="moveQ2()">&#9313;</li>
-      <li onclick="moveQ3()">&#9314;</li>
-    </div>
+      <div class="questionMove">
+        <li onclick="moveQ1()">&#10102;</li>
+        <li onclick="moveQ2()">&#9313;</li>
+        <li onclick="moveQ3()">&#9314;</li>
+      </div>
+
     </div>
 
-    <!--フッター-->
+    <!--上部に戻るボタン-->
     <div class="footerButton">
       <div class="upButton"><a href="#" class="button-up">↑</a></div>
     </div>
+
+    <!--フッター-->
     <footer>
-      <img src="images/image_appIcon.png" width="120" height="120">
+      <img src="images/karakuriAppicon.png"  class="appIcon">
       <p>●タイトル：カラクリウォーズ<br>
         ●想定ジャンル：最強の相棒で戦う！バトルアクション<br>
         ●想定価格：基本無料(一部課金あり)<br>
@@ -205,21 +242,20 @@
 
       <div class="copyRight">
         <p class="copyRight">
-          このホームページに掲載されている一切の文書・図版・写真等を手段や形態を問わず複製、転載することを禁じます.<br>
+          このホームページに掲載されている一切の文書・図版・写真等を手段や形態を問わず複製・転載することを禁じます.<br>
           ©2018　カラクリウォーズ　Yu-ki.</p>
       </div>
-
     </footer>
-  </div>
 
-  <!--グリッドレイアウトの終了-->
+  </div><!--グリッドレイアウトの終了-->
 </main>
 
 
-
+<!--js読み込み-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 <script type="text/javascript" src="js/animation.js"></script>
 <script type="text/javascript" src="js/switching.js"></script>
 <!--<script type="text/javascript" src="js/news.js"></script>-->
+
 </body>
 </html>

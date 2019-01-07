@@ -1,24 +1,21 @@
-/* PC用CSS */
-@media print, screen and (min-width: 800px) {
+/* スマートフォン用CSS */
+@media screen and (max-width: 800px) {
 
   * {
     margin: 0;
     padding: 0;
   }
-
   body {
     position: relative;
     overflow-x: hidden;
     font-family: 'Rajdhani', 'Noto Sans JP', sans-serif;
     line-height: 1.5;
   }
-
   a,
   a:visited {
     text-decoration: none;
     color: white;
   }
-
   span {
     background-color: #222222;
   }
@@ -115,8 +112,8 @@
 
   #top .characterImage .git {
     position: fixed;
-    right: -176px;
-    top: 210px;
+    right: -137px;
+    top: 160px;
     display: block;
     z-index: 4;
     transition: all .5s;
@@ -125,18 +122,15 @@
 
   #top .characterImage .twi {
     position: fixed;
-    right: -176px;
-    top: 290px;
+    right: -137px;
+    top: 220px;
     display: block;
     z-index: 4;
     transition: all .5s;
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
   }
 
-  #top .characterImage .git:hover,
-  #top .characterImage .twi:hover {
-    right: -10px;
-  }
+
 
   /*メインコンテンツの土台*/
   main {
@@ -160,8 +154,8 @@
   }
 
   .back_C {
-    grid-row: 6 / 7;
-    grid-column: 8 / 11;
+    grid-row: 9 / 11;
+    grid-column: 6 / 11;
     text-align: right;
     z-index: -1;
   }
@@ -172,8 +166,8 @@
   }
 
   .back_W {
-    grid-row: 10 / 13;
-    grid-column: 1 / 5;
+    grid-row: 14 / 17;
+    grid-column: 1 / 3;
     z-index: -1;
   }
 
@@ -182,23 +176,23 @@
   }
 
   .back {
-    grid-row: 10 / 14;
+    grid-row: 15 / 17;
     grid-column: 1 / 11;
     z-index: -2;
   }
 
   .back img {
-    height: 100%;
+    width: 100%;
     position: relative;
-    top: 210px;
+    top: 160px;
   }
 
   /*メニュー*/
   #nav-drawer {
     position: fixed;
     z-index: 101;
-    top: 46px;
-    right: 19px;
+    top: 31px;
+    right: 0;
   }
 
   .nav-unshown { /*チェックボックス非表示*/
@@ -216,7 +210,7 @@
   #nav-open span, #nav-open span:before, #nav-open span:after {
     position: absolute;
     height: 6px; /*太さ*/
-    width: 42px; /*長さ*/
+    width: 33px; /*長さ*/
     border-radius: 2px;
     background: #080808;
     display: block;
@@ -226,11 +220,11 @@
   }
 
   #nav-open span:before {
-    transform: translateY(-14px);
+    transform: translateY(-12px);
   }
 
   #nav-open span:after {
-    transform: translateY(14px);
+    transform: translateY(12px);
   }
 
   /*閉じるためのカバー*/
@@ -266,13 +260,13 @@
 
   #nav-content li {
     position: relative;
-    margin-right: 100px;
-    right: 200px;
+    margin-right: 20px;
+    right: 120px;
     list-style: none;
     display: inline;
     line-height: 100px;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   #nav-content a {
@@ -316,8 +310,8 @@
     margin-right: auto;
     margin-left: auto;
     display: grid; /*グリッドレイアウトにする設定*/
-    grid-auto-rows: 60px /*TOPからの余白*/ 40px /*News見出し*/ 270px /*お知らせとバージョン*/ 180px /*余白*/ 80px /*キャラクター見出し*/ 500px /*キャラ画像と説明用*/ 120px /*キャラ切り替え用*/ 200px /*余白*/ 80px /*世界観見出し用*/ 300px /*世界観説明用*/ 50px /*背景用*/ 300px /*モックアップ表示用*/ 200px /*余白*/ 500px /*質問*/ 40px /*余白*/ 30px /*ボタン用*/ 30px /*ボタン用*/ 480px /*フッター*/;
-    grid-auto-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-auto-rows: 60px /*TOPからの余白*/ 40px/*お知らせ見出し*/ 240px/*お知らせ*/ 80px/*余白*/  300px /*ツイッター連携*/ 80px/*余白*/ 45px /*キャラ見出し*/ 270px /*キャラ表示*/ 285px /*キャラ説明*/ 120px /*キャラ切り替え*/ 80px /*余白*/ 45px /*世界観見出し*/ 20px/*余白*/ 250px /*世界観説明*/ 0 /*余白*/ 325px /*UI*/ 40px /*余白*/ 450px /*質問*/ 50px/*切り替え*/ 20px 20px 20px 520px;
+    grid-auto-columns: 6% 12% 12% 10% 10% 10% 10% 12% 12% 6%;
   }
 
   /*お知らせとツイッター連携*/
@@ -333,7 +327,7 @@
 
   .news {
     grid-row: 3;
-    grid-column: 2 / 7;
+    grid-column: 2 / 10;
     background-color: white;
     border: solid 12px #f5c51d;
   }
@@ -345,7 +339,7 @@
   .news #sheet li {
     list-style: none;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 7px;
     margin-bottom: 7px;
   }
@@ -355,8 +349,8 @@
   }
 
   .version {
-    grid-row: 3;
-    grid-column: 7 / 10;
+    grid-row: 5;
+    grid-column: 2 / 10;
     text-align: right;
   }
 
@@ -366,8 +360,8 @@
 
   /*キャラクター*/
   .character-midashi {
-    grid-row: 5;
-    grid-column: 2 / 6;
+    grid-row: 7;
+    grid-column: 2 / 10;
   }
 
   .character-midashi img {
@@ -375,20 +369,22 @@
   }
 
   .character {
-    grid-row: 6;
-    grid-column: 2 / 6;
+    grid-row: 8;
+    grid-column: 2 / 10;
     text-align: center;
   }
 
   .character img {
-    height: 100%;
+    width: 100%;
   }
 
   .character-caption {
-    grid-row: 6;
-    grid-column: 6 / 10;
+    grid-row: 9;
+    grid-column: 2 / 10;
   }
-
+  .character-caption p{
+    font-size: 12px;
+  }
   .character-caption h1,
   .character-caption p {
     color: white;
@@ -397,21 +393,21 @@
 
   /*キャラ切り替え*/
   .characterMove {
-    grid-row: 7;
+    grid-row: 10;
     grid-column: 2 / 10;
     text-align: right;
   }
 
   .characterMove img {
-    height: 100%;
-    margin-left: 15px;
+    height: 60%;
+    margin-left: 8px;
     cursor: pointer;
   }
 
   /*世界観*/
   .world-midashi {
-    grid-row: 9;
-    grid-column: 6 / 10;
+    grid-row: 12;
+    grid-column: 2 / 10;
     text-align: right;
   }
 
@@ -420,14 +416,16 @@
   }
 
   .world {
-    grid-row: 10;
+    grid-row: 14;
     grid-column: 2/10;
   }
 
   .world h2 {
     font-family: 'Noto Sans JP', sans-serif;
   }
-
+  .world p {
+    font-size: 12px;
+  }
   .world h2,
   .world p {
     color: white;
@@ -436,24 +434,23 @@
 
   /*mock-up*/
   .UI-mockUp {
-    grid-row: 11 / 13;
+    grid-row: 16;
     grid-column: 2 / 10;
     text-align: center;
   }
 
   .UI-mockUp img {
-    height: 100%;
+    width: 100%;
     transition: all .4s;
   }
 
   .UI-mockUp img:hover {
     transform: scale(1.12);
-    height: 100%;
   }
 
   /*よくある質問*/
   .qa {
-    grid-row: 14;
+    grid-row: 18;
     grid-column: 1 / 11;
     text-align: center;
     background-color: #9BD1DE;
@@ -464,7 +461,7 @@
   }
 
   .qa .qaSheet {
-    width: 70%;
+    width: 75%;
     height: 260px;
     margin-right: auto;
     margin-left: auto;
@@ -481,11 +478,11 @@
 
   .qa .qaSheet #question h2 {
     font-family: 'Noto Sans JP', sans-serif;
-    text-align: center;
     line-height: 50px;
+    text-align: center;
     color: white;
+    font-size: 16px;
   }
-
   .qa .qaSheet #answer {
     padding: 30px;
     transition: all .2s;
@@ -501,8 +498,8 @@
   }
 
   .questionMove {
-    grid-row: 6;
-    grid-column: 2 / 5;
+    grid-row: 19;
+    grid-column: 2 / 10;
     text-align: center;
   }
 
@@ -529,7 +526,7 @@
 
   /*上部に戻るボタン*/
   .footerButton {
-    grid-row: 16 / 18;
+    grid-row: 21 / 23;
     grid-column: 1 / 11;
     z-index: 5;
   }
@@ -565,10 +562,10 @@
 
   /*フッター*/
   footer {
-    grid-row: 17 / 19;
+    grid-row: 22 / 24;
     grid-column: 1 / 11;
     background-color: #1c1d1c;
-    font-size: 13px;
+    font-size: 11px;
     text-align: center;
     color: white;
     padding-top: 100px;
@@ -593,19 +590,19 @@
   }
 }
 
-.navImage{
-  width: 212px;
-  height: 164px
-}
 .appIcon{
   width: 144px;
   height: 144px;
 }
+.navImage{
+  width: 150px;
+  height: 116px;
+}
 .snsBanner{
-  width: 231px;
-  height: 64px;
+  width: 180px;
+  height: 50px;
 }
 .giarImage1{
-  width: 200px;
-  height: 200px;
+  width: 164px;
+  height: 164px;
 }
