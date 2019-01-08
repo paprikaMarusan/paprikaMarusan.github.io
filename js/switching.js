@@ -53,7 +53,7 @@ function changeMichelle(){
 function changeLeonard(){
   document.querySelector('.character').innerHTML = `<img src="images/leonard_unit.png">`;
   document.querySelector('.characterName').innerHTML = `<h1><span>レオナルド</span></h1>`;
-  document.querySelector('.characterAbility').innerHTML = `<p><span>闇属性ランサー｜20歳｜カラクリ：ゲリンゼル</span></p>`;
+  document.querySelector('.characterAbility').innerHTML = `<p><span>闇属性ランサー｜20歳｜カラクリ：ナイトスピア</span></p>`;
   document.querySelector('.characterProfile').innerHTML = `<p><span>荒くれ者ギルド[ドロップアウトディーバ]の一員.<br>イカつい見た目と粗野な言動から怖がられがちだが、<br>実は人と話すのが苦手なだけ.<br>ただし、一度キレると怒りを制御できなくなるので、注意が必要.<br><br></span></p><p><span>「」</span></p>`;
   document.querySelector('.characterMove').innerHTML = `<img src="images/mimil_charaparts.png" onClick="changeLuke()"><img src="images/hirona_charaparts.png" onClick="changeHirona()"><img src="images/mimil_charaparts.png" onClick="changeKana()"><img src="images/mimil_charaparts.png" onClick="changeMichelle()"><img src="images/leonard_charaparts_active.png" onClick="changeLeonard()">`;
 }

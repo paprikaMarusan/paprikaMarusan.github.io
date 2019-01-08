@@ -396,12 +396,12 @@
 
   .character {
     grid-row: 8 /10;
-    grid-column: 1 / 11;
+    grid-column: 2 / 10;
     text-align: center;
   }
 
   .character img {
-    height: 72%;
+    width: 100%;
   }
 
   .character-caption {
