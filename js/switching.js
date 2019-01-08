@@ -25,8 +25,7 @@ function changeLuke(){
   document.querySelector('.characterName').innerHTML = `<h1><span>ルーク</span></h1>`;
   document.querySelector('.characterAbility').innerHTML = `<p><span>炎属性ファイター｜19歳｜カラクリ：フレイムナックル</span></p>`;
   document.querySelector('.characterProfile').innerHTML = `<p><span>街を守る警備組織 [カラクリナイツ] の一員.<br>何事にも全力で情に厚い男.<br>同期のヒロナからは「熱血すぎ」と呆れられがち.<br>本人はそんなことを意に介さず、<br>今日もカラクリ片手に街の平和を守り抜く！<br><br></span></p><p><span>「街の平和を乱すのはどこのどいつだ！」</span></p>`;
-  document.querySelector('.characterMove').innerHTML = `      <img src="images/mimil_charaparts_active.png" onClick="changeLuke()"><img src="images/hirona_charaparts.png" onClick="changeHirona()"><img src="images/mimil_charaparts.png" onClick="changeKana()"><img src="images/mimil_charaparts.png" onClick="changeMichelle()"><img src="images/mimil_charaparts.png" onClick="changeLeonard()">
-`;
+  document.querySelector('.characterMove').innerHTML = `<img src="images/mimil_charaparts_active.png" onClick="changeLuke()"><img src="images/hirona_charaparts.png" onClick="changeHirona()"><img src="images/mimil_charaparts.png" onClick="changeKana()"><img src="images/mimil_charaparts.png" onClick="changeMichelle()"><img src="images/leonard_charaparts.png" onClick="changeLeonard()">`;
 }
 
 function changeHirona(){
@@ -34,8 +33,7 @@ function changeHirona(){
   document.querySelector('.characterName').innerHTML = `<h1><span>ヒロナ</span></h1>`;
   document.querySelector('.characterAbility').innerHTML = `<p><span>水属性ガンナー｜17歳｜カラクリ：アクアキャノン</span></p>`;
   document.querySelector('.characterProfile').innerHTML = `<p><span>街を守る警備組織 [カラクリナイツ] の一員.<br>興味のあること以外は無関心な性格だが、<br>頼まれた仕事はしっかりやっているようだ.<br>音楽好きでいつもヘッドフォンを持ち歩いている.<br><br></span></p><p><span>「…音楽を楽しく聴くには、街が平和じゃないとね」</span></p>`;
-  document.querySelector('.characterMove').innerHTML = `      <img src="images/mimil_charaparts.png" onClick="changeLuke()"><img src="images/hirona_charaparts_active.png" onClick="changeHirona()"><img src="images/mimil_charaparts.png" onClick="changeKana()"><img src="images/mimil_charaparts.png" onClick="changeMichelle()"><img src="images/mimil_charaparts.png" onClick="changeLeonard()">
-`;
+  document.querySelector('.characterMove').innerHTML = `<img src="images/mimil_charaparts.png" onClick="changeLuke()"><img src="images/hirona_charaparts_active.png" onClick="changeHirona()"><img src="images/mimil_charaparts.png" onClick="changeKana()"><img src="images/mimil_charaparts.png" onClick="changeMichelle()"><img src="images/leonard_charaparts.png" onClick="changeLeonard()">`;
 }
 
 function changeKana(){
@@ -43,24 +41,21 @@ function changeKana(){
   document.querySelector('.characterName').innerHTML = `<h1><span>カナ</span></h1>`;
   document.querySelector('.characterAbility').innerHTML = `<p><span>風属性ヒーラー｜25歳｜カラクリ：ヒーリングボム</span></p>`;
   document.querySelector('.characterProfile').innerHTML = `<p><span>街外れにある教会のシスター.<br>優しく、マイペースな性格.<br>気まぐれに触ったカラクリに興味を持ち、のめり込んだ.<br>カラクリ片手に戦うというのは<br>シスター的にどうなのかと周りは思っているが、<br>マイペースな彼女はあまり気にしていないようだ.<br><br></span></p><p><span>「」</span></p>`;
-  document.querySelector('.characterMove').innerHTML = `      <img src="images/mimil_charaparts.png" onClick="changeLuke()"><img src="images/hirona_charaparts.png" onClick="changeHirona()"><img src="images/mimil_charaparts_active.png" onClick="changeKana()"><img src="images/mimil_charaparts.png" onClick="changeMichelle()"><img src="images/mimil_charaparts.png" onClick="changeLeonard()">
-`;
+  document.querySelector('.characterMove').innerHTML = `<img src="images/mimil_charaparts.png" onClick="changeLuke()"><img src="images/hirona_charaparts.png" onClick="changeHirona()"><img src="images/mimil_charaparts_active.png" onClick="changeKana()"><img src="images/mimil_charaparts.png" onClick="changeMichelle()"><img src="images/leonard_charaparts.png" onClick="changeLeonard()">`;
 }
 function changeMichelle(){
   document.querySelector('.character').innerHTML = `<img src="images/mimil_unit.png">`;
   document.querySelector('.characterName').innerHTML = `<h1><span>ミシェル</span></h1>`;
   document.querySelector('.characterAbility').innerHTML = `<p><span>光属性ソードマン｜15歳｜カラクリ：スライサー</span></p>`;
   document.querySelector('.characterProfile').innerHTML = `<p><span>ちょっぴり危ない雰囲気の女の子.<br>惚れっぽい性格で、いつも恋に燃えている.<br>カラクリアリーナに挑戦し始めてからは、<br>自分より強い人に惹かれるようになったらしい.<br><br></span></p><p><span>「あぁ、あの人こそきっと私の王子様！」</span></p>`;
-  document.querySelector('.characterMove').innerHTML = `      <img src="images/mimil_charaparts.png" onClick="changeLuke()"><img src="images/hirona_charaparts.png" onClick="changeHirona()"><img src="images/mimil_charaparts.png" onClick="changeKana()"><img src="images/mimil_charaparts_active.png" onClick="changeMichelle()"><img src="images/mimil_charaparts.png" onClick="changeLeonard()">
-`;
+  document.querySelector('.characterMove').innerHTML = `<img src="images/mimil_charaparts.png" onClick="changeLuke()"><img src="images/hirona_charaparts.png" onClick="changeHirona()"><img src="images/mimil_charaparts.png" onClick="changeKana()"><img src="images/mimil_charaparts_active.png" onClick="changeMichelle()"><img src="images/leonard_charaparts.png" onClick="changeLeonard()">`;
 }
 function changeLeonard(){
-  document.querySelector('.character').innerHTML = `<img src="images/mimil_unit.png">`;
+  document.querySelector('.character').innerHTML = `<img src="images/leonard_unit.png">`;
   document.querySelector('.characterName').innerHTML = `<h1><span>レオナルド</span></h1>`;
-  document.querySelector('.characterAbility').innerHTML = `<p><span>闇属性ランサー｜20歳｜カラクリ：ランス</span></p>`;
-  document.querySelector('.characterProfile').innerHTML = `<p><span>ちょっぴり危ない雰囲気の女の子.<br>惚れっぽい性格で、いつも恋に燃えている.<br>カラクリアリーナに挑戦し始めてからは、<br>自分より強い人に惹かれるようになったらしい.<br><br></span></p><p><span>「」</span></p>`;
-  document.querySelector('.characterMove').innerHTML = `      <img src="images/mimil_charaparts.png" onClick="changeLuke()"><img src="images/hirona_charaparts.png" onClick="changeHirona()"><img src="images/mimil_charaparts.png" onClick="changeKana()"><img src="images/mimil_charaparts.png" onClick="changeMichelle()"><img src="images/mimil_charaparts_active.png" onClick="changeLeonard()">
-`;
+  document.querySelector('.characterAbility').innerHTML = `<p><span>闇属性ランサー｜20歳｜カラクリ：ゲリンゼル</span></p>`;
+  document.querySelector('.characterProfile').innerHTML = `<p><span>荒くれ者ギルド[ドロップアウトディーバ]の一員.<br>イカつい見た目と粗野な言動から怖がられがちだが、<br>実は人と話すのが苦手なだけ.<br>ただし、一度キレると怒りを制御できなくなるので、注意が必要.<br><br></span></p><p><span>「」</span></p>`;
+  document.querySelector('.characterMove').innerHTML = `<img src="images/mimil_charaparts.png" onClick="changeLuke()"><img src="images/hirona_charaparts.png" onClick="changeHirona()"><img src="images/mimil_charaparts.png" onClick="changeKana()"><img src="images/mimil_charaparts.png" onClick="changeMichelle()"><img src="images/leonard_charaparts_active.png" onClick="changeLeonard()">`;
 }
 
 
