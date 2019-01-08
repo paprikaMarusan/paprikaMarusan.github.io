@@ -1,6 +1,6 @@
-const kana = anime({ //kana
-  targets: '#kana',
-  translateX: '-60px',
+const leonard = anime({ //leonard
+  targets: '#leonard',
+  translateX: '-20px',
   duration: 1000,
   loop: false,
   direction: 'alternate',
@@ -18,9 +18,9 @@ const mimil = anime({ //mimil
   opacity: [0,1],
 });
 
-const leonard = anime({ //leonard
-  targets: '#leonard',
-  translateX: '-20px',
+const kana = anime({ //kana
+  targets: '#kana',
+  translateX: '-60px',
   duration: 1000,
   loop: false,
   direction: 'alternate',
