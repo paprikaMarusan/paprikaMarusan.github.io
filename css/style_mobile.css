@@ -54,7 +54,7 @@
     margin-right: auto;
     height: 650px;
     background-image: url(../images/top.png);
-    background-position: center center;
+    /*background-position: center center;*/
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -66,20 +66,20 @@
   /*メインビジュアル：キャラクター*/
   #top .characterImage .kana {
     position: absolute;
-    right: 0;
-    top: -10px;
+    right: 5px;
+    top: 130px;
     display: block;
   }
   #top .characterImage .mimil {
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 10px;
     display: block;
   }
   #top .characterImage .leonard {
     position: absolute;
-    right: 10px;
-    top: 20px;
+    right: 30px;
+    top: -150px;
     display: block;
   }
   #top .characterImage .hirona {
@@ -89,7 +89,7 @@
     display: block;
   }
   .kanaSize{
-    width: 420px;
+    width: 450px;
   }
   .mimilSize{
     width: 300px;
@@ -98,7 +98,7 @@
     width: 300px;
   }
   .hironaSize{
-    width: 380px;
+    width: 360px;
   }
   .logoSize{
     width: 90%;
@@ -336,7 +336,7 @@
     margin-right: auto;
     margin-left: auto;
     display: grid; /*グリッドレイアウトにする設定*/
-    grid-auto-rows: 60px /*TOPからの余白*/ 40px/*お知らせ見出し*/ 240px/*お知らせ*/ 80px/*余白*/  300px /*ツイッター連携*/ 80px/*余白*/ 45px /*キャラ見出し*/ 270px /*キャラ表示*/ 285px /*キャラ説明*/ 120px /*キャラ切り替え*/ 80px /*余白*/ 45px /*世界観見出し*/ 20px/*余白*/ 250px /*世界観説明*/ 30px /*余白*/ 325px /*UI*/ 40px /*余白*/ 450px /*質問*/ 50px/*切り替え*/ 20px 20px 20px 520px;
+    grid-auto-rows: 60px /*TOPからの余白*/ 40px/*お知らせ見出し*/ 240px/*お知らせ*/ 80px/*余白*/  300px /*ツイッター連携*/ 80px/*余白*/ 45px /*キャラ見出し*/ 270px /*キャラ表示*/ 230px /*キャラ説明*/ 120px /*キャラ切り替え*/ 80px /*余白*/ 45px /*世界観見出し*/ 20px/*余白*/ 250px /*世界観説明*/ 30px /*余白*/ 325px /*UI*/ 40px /*余白*/ 450px /*質問*/ 50px/*切り替え*/ 20px 20px 20px 520px;
     grid-auto-columns: 6% 12% 12% 10% 10% 10% 10% 12% 12% 6%;
   }
 
@@ -408,6 +408,9 @@
     grid-row: 9;
     grid-column: 2 / 10;
   }
+  .character-caption h1{
+    font-size: 20px;
+  }
   .character-caption p{
     font-size: 12px;
   }
@@ -422,6 +425,7 @@
     grid-row: 10;
     grid-column: 2 / 10;
     text-align: right;
+    z-index: 3;
   }
 
   .characterMove img {
