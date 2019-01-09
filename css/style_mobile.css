@@ -67,7 +67,7 @@
   #top .characterImage .kana {
     position: absolute;
     right: 5px;
-    top: 130px;
+    top: 190px;
     display: block;
   }
   #top .characterImage .mimil {
@@ -78,8 +78,14 @@
   }
   #top .characterImage .leonard {
     position: absolute;
-    right: 30px;
+    right: 60px;
     top: -150px;
+    display: block;
+  }
+  #top .characterImage .luke {
+    position: absolute;
+    right: 100px;
+    top: 80px;
     display: block;
   }
   #top .characterImage .hirona {
@@ -89,7 +95,7 @@
     display: block;
   }
   .kanaSize{
-    width: 450px;
+    width: 470px;
   }
   .mimilSize{
     width: 300px;
@@ -97,8 +103,11 @@
   .leonardSize{
     width: 300px;
   }
+  .lukeSize{
+    width: 480px;
+  }
   .hironaSize{
-    width: 360px;
+    width: 380px;
   }
   .logoSize{
     width: 90%;

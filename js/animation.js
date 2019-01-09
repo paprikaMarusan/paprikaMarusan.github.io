@@ -20,7 +20,17 @@ const mimil = anime({ //mimil
 
 const kana = anime({ //kana
   targets: '#kana',
-  translateX: '-60px',
+  translateX: '60px',
+  duration: 1000,
+  loop: false,
+  direction: 'alternate',
+  easing: 'easeInOutQuad',
+  opacity: [0,1],
+});
+
+const luke = anime({ //luke
+  targets: '#luke',
+  translateX: '-40px',
   duration: 1000,
   loop: false,
   direction: 'alternate',
