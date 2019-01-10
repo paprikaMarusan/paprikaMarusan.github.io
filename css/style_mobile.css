@@ -201,7 +201,7 @@
   }
 
   .back_W {
-    grid-row: 14 / 17;
+    grid-row: 15 / 18;
     grid-column: 1 / 6;
     z-index: -10;
   }
@@ -211,7 +211,7 @@
   }
 
   .back {
-    grid-row: 15 / 17;
+    grid-row: 16 / 18;
     grid-column: 1 / 11;
     z-index: -10;
   }
