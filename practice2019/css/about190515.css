@@ -1,4 +1,4 @@
-* {
+* {/*すべての要素で適用*/
   margin: 0;
   padding: 0;
 }
@@ -9,6 +9,7 @@ body{
   line-height: 1.5;
 }
 
+/*リンクの設定*/
 a,
 a:visited{
   text-decoration: none;
@@ -17,6 +18,8 @@ a:visited{
 a:hover{
   border-bottom: solid 1px #00a3af;
 }
+
+/*装飾とか*/
 hr{
   border: solid 2px;
   margin-bottom: 20px;
@@ -45,7 +48,7 @@ h1:before, h1:after, span:before, span:after {
   content: '';
   position: absolute;
   top: -7px;
-  width: 3.2px;
+  width: 3px;
   height: -webkit-calc(100% + 15px);
   height: calc(100% + 15px);
   background-color: black;
@@ -88,24 +91,10 @@ h2:after {
   right: 0;
 }
 
-.retroGame h3,
-.tvDrama h3,
-.comedian h3{
-  color: #00a3af;/*文字色*/
-  /*線の種類（点線）2px 線色*/
-  border-bottom: dashed 2px #00a3af;
-}
-
-
 img{
   object-fit: cover;
 }
-#main{
-  width: 86%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-}
+
 .right{
   text-align: right;
 }
@@ -114,6 +103,15 @@ img{
   margin-top: 5px;
   font-size: 12px;
 }
+
+/*メイン*/
+#main{
+  width: 86%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
 /*CSSグリッドの設定*/
 #container {
   margin-top: 80px;
@@ -125,7 +123,6 @@ img{
   grid-auto-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
   z-index: 10;
 }
-
 
 .life{
   grid-row: 1;
@@ -143,15 +140,6 @@ img{
 .tasteIMG{
   grid-row: 3;
   grid-column: 9/14;
-}
-.lifeIMG img,
-.tasteIMG img,
-.colorIMG img,
-.retroGameIMG img,
-.tvDramaIMG img,
-.comedianIMG img{
-  height: 100%;
-  width: 100%;
 }
 
 .color{
@@ -193,6 +181,23 @@ img{
 .comedianIMG{
   grid-row: 8;
   grid-column: 15/21;
+}
+
+.lifeIMG img,
+.tasteIMG img,
+.colorIMG img,
+.retroGameIMG img,
+.tvDramaIMG img,
+.comedianIMG img{
+  height: 100%;
+  width: 100%;
+}
+.retroGame h3,
+.tvDrama h3,
+.comedian h3{
+  color: #00a3af;/*文字色*/
+  /*線の種類（点線）2px 線色*/
+  border-bottom: dashed 2px #00a3af;
 }
 
 /*フッター*/
