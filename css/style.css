@@ -248,7 +248,8 @@
   .giarImage1{
     width: 200px;
     height: 200px;
-  }  /*メニュー*/
+  }
+  /*メニュー*/
   #nav-drawer {
     position: fixed;
     z-index: 101;

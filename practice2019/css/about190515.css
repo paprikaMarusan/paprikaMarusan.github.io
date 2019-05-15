@@ -9,6 +9,14 @@ body{
   line-height: 1.5;
 }
 
+a,
+a:visited{
+  text-decoration: none;
+  color: #00a3af;
+}
+a:hover{
+  border-bottom: solid 1px #00a3af;
+}
 hr{
   border: solid 2px;
   margin-bottom: 20px;
@@ -17,6 +25,7 @@ h2{
   text-align: left;
   margin-top: 0;
   margin-bottom: 20px;
+  color: #00a3af;
 }
 h1,
 h3{
@@ -66,25 +75,25 @@ h2:before, h2:after {
   display: inline-block;
 }
 h2:before {
-  border-left: solid 1px black;
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
+  border-left: solid 1px #00a3af;
+  border-top: solid 1px #00a3af;
+  border-bottom: solid 1px #00a3af;
   left: 0;
 }
 h2:after {
   content: '';
-  border-top: solid 1px black;
-  border-right: solid 1px black;
-  border-bottom: solid 1px black;
+  border-top: solid 1px #00a3af;
+  border-right: solid 1px #00a3af;
+  border-bottom: solid 1px #00a3af;
   right: 0;
 }
 
 .retroGame h3,
 .tvDrama h3,
 .comedian h3{
-  color: #6594e0;/*文字色*/
+  color: #00a3af;/*文字色*/
   /*線の種類（点線）2px 線色*/
-  border-bottom: dashed 2px #6594e0;
+  border-bottom: dashed 2px #00a3af;
 }
 
 
