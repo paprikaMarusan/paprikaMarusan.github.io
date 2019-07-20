@@ -39,21 +39,19 @@ header a:hover{
   border-bottom: 1px solid #FFFFFF;
 }
 
-header{
+.logo{
+  position: fixed;
+  top: 12px;
+  left: 20px;
+  z-index: 10;
 }
-
-header .siteMenu{
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+.logo img{
+  height: 65px;
+  transition: all .3s ease-in-out;
 }
-
-header .siteTitle h3{
-  float: left;
-}
-
-header .siteMenu li{
-  list-style: none;
+.logo img:hover{
+  opacity: .6;
+  transition: all .3s ease-in-out;
 }
 
 /*グラデーションメニュー*/
@@ -125,7 +123,7 @@ header .siteMenu li{
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-  z-index: 8;
+  z-index: 20;
 }
 .overlay:target {
   visibility: visible;
@@ -142,6 +140,7 @@ header .siteMenu li{
   position: relative;
   transition: all 5s ease-in-out;
   z-index: 10;
+  text-align: left;
 }
 
 .modalWindow h2 {
@@ -155,6 +154,7 @@ header .siteMenu li{
   font-size: 12px;
   color: #63cdda;
 }
+
 .modalWindow .close {
   position: absolute;
   top: 20px;
@@ -355,7 +355,43 @@ figure.profile.hover:after {
   margin-top: 120px;
 }
 #activityArchive li{
+  list-style: circle;
   margin-bottom: 80px;
+}
+#activityArchive h4{
+  text-align: left;
+  font-size: 16px;
+}
+
+#activityReport{
+  margin: 120px auto 100px auto;
+  width: 80%;
+}
+#activityReport img{
+  width: 680px;
+  height: 420px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+#activityReport ul{
+  list-style: circle;
+  margin-bottom: 40px;
+}
+#activityReport li{
+  list-style: circle;
+  margin-left: 20px;
+}
+#activityReport h3{
+  margin: 0;
+}
+#activityReport h4{
+  text-align: center;
+  font-size: 16px;
+  color: #56c6c5;
+}
+
+#activityReport section{
+  text-align: left;
 }
 
 /*フッター*/
