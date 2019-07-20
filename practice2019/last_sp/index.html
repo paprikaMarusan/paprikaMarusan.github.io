@@ -6,18 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!--サイト説明-->
-  <meta name="description" content="このサイトは映画のあらすじとちょっとした見所をゆるっと紹介する個人サイトです。見やすく、探しやすいをコンセプトに大学の演習で制作しました。レスポンシブにも対応しています。">
+  <meta name="description" content="[きゅんとふぇーす.com]大学の文化祭で電子部品を使ったアクセサリーを販売します！このサイトではサークルのお知らせや活動内容を発信していきたいです！">
 
   <!--Twitterカード-->
   <meta name="twitter:card" content="summary">
   <meta property="og:url" content="https://paprikamarusan.github.io/">
-  <meta property="og:title" content="映画をゆるっと紹介！">
-  <meta property="og:description" content="このサイトは映画のあらすじとちょっとした見所をゆるっと紹介する個人サイトです。見やすく、探しやすいをコンセプトに大学の演習で制作しました。レスポンシブにも対応しています。">
+  <meta property="og:title" content="電子雑貨制作サークル[きゅんとふぇーす]">
+  <meta property="og:description" content="Cute × Interfaceをコンセプトに大学の文化祭で電子部品を使ったアクセサリーを販売します！このサイトではサークルのお知らせや活動内容を発信していきたいです！">
   <meta property="og:image" content="https://paprikamarusan.github.io/images/karakuriAppicon.png">
 
   <!--フォントの読み込み-->
   <link href="https://fonts.googleapis.com/css?family=Asap|Rajdhani" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:200,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <!--CSSの読み込み-->
   <link rel="stylesheet" href="css/style.css">
@@ -28,38 +29,156 @@
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
 
-  <title>サイトの名前</title>
+  <title>きゅんとふぇーす.com</title>
 
 </head>
 <body>
-<!--ハンバーガーメニュー-->
-<li>このサイトについて</li>
-<li>サーチ</li>
-<li>コンタクト</li>
+<!--メニュー-->
+<header>
+  <div class="gradientMenu">
+    <li><a href="#about">Cuteface?</a></li>
+    <li><a href="#member">Member</a></li>
+    <li><a href="activity.html">Activity</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </div>
+</header>
 
-<!--メインコンテンツ-->
+<!--トップ背景-->
+<div id="mainVisual" class="box-under-shadow">　
 
-<!--検索部分-->
-<!--ラジオボタンを装飾して作成する_セレクトボックス-->
-ジャンル
-公開年
-特殊なジャンル
-
-<!--検索ボタン-->
-<!--押したら再読み込みせずにカード部分が更新されるようにしたい-->
-<!--ポートフォリオサイトで使ってるプラグインとスプレッドシートを並べ替えられないだろうか！-->
-SEARCH!!
-
-<!--モーダルウィンドウの内容-->
-<!--スプレッドシートから内容を読み取ってカードを作成-->
-<div class="movieCard">
-  <div id="card"><!--Googleスプレッドシートで管理--></div>
 </div>
 
-<!--フッター-->
-<p>
-  このホームページに掲載されている一切の文書・図版・写真等を手段や形態を問わず複製・転載することを禁じます.<br>
-  ©2019　サイト名　Yu-ki.</p>
+<!--サイトの中身-->
+<div id="mainContents">
 
+  <!--簡単に紹介-->
+  <div id="about">
+    <h1><span class="under">きゅんとふぇーすとは</span></h1>
+    <h3>「電子部品は可愛い！(Cute × Interface)」</h3>
+    <p>をコンセプトにハンドメイドグッズを制作する期間限定学生サークルです.<br>
+      プランナー、エンジニア、デザイナーの3人が集まって、いろんな視点から試行錯誤をして活動中！</p>
+    <p>東京工科大学 第15回紅華祭への出店に向けて鋭意作品製作中！</p>
+  </div>
+
+  <!--画像クリックでモーダル開く-->
+  <div id="member">
+    <h1><span class="under">きゅんとふぇーすのメンバー</span></h1>
+    <ul>
+      <li>
+        <figure class="profile pink">
+          <img src="images/Jyonyonry.png" alt="ぼんばいえ">
+          <figcaption>
+            <h3>ぼんばいえ(4年)</h3>
+            <p>企画の立案者</p>
+          </figcaption>
+          <a href="#profile1"></a>
+        </figure>
+      </li>
+
+      <li>
+        <figure class="profile pink">
+          <img src="images/shiorin.jpg" alt="しおりん">
+          <figcaption>
+            <h3>しおりん(4年)</h3>
+            <p>基盤系女子</p>
+          </figcaption>
+          <a href="#profile2"></a>
+        </figure>
+      </li>
+
+      <li>
+        <figure class="profile pink">
+          <img src="images/hachi.jpg" alt="まるさん">
+          <figcaption>
+            <h3>まるさん(4年)</h3>
+            <p>きいろ中毒者</p>
+          </figcaption>
+          <a href="#profile3"></a>
+        </figure>
+      </li>
+    </ul>
+
+  </div>
+
+  <!--以下、モーダルウィンドウの中身-->
+  <div id="profile1" class="overlay">
+    <div class="modalWindow">
+      <h2>ぼんばいえ</h2>
+      <a class="close" href="#member">&times;</a>
+      <div class="content">
+        <h3>きいろ中毒者 × プランナー</h3>
+        <p>ゲームと洋ドラとお笑いを糧に平日を生き抜く限界4年生.<br>
+          どこでも寝れる体質.<br>
+          好きな電子部品は「ヒューズ」.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="profile2" class="overlay">
+    <div class="modalWindow">
+      <h2>しおりん</h2>
+      <a class="close" href="#member">&times;</a>
+      <div class="content">
+        <h3>きいろ中毒者 × エンジニア</h3>
+        <p>ゲームと洋ドラとお笑いを糧に平日を生き抜く限界4年生.<br>
+          どこでも寝れる体質.<br>
+          好きな電子部品は「ヒューズ」.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="profile3" class="overlay">
+    <div class="modalWindow">
+      <h2>まるさん</h2>
+      <a class="close" href="#member">&times;</a>
+      <div class="content">
+        <h3>きいろ中毒者 × デザイナー</h3>
+        <p>ゲームと洋ドラとお笑いを糧に平日を生き抜く限界4年生.<br>
+          どこでも寝れる体質.<br>
+          好きな電子部品は「ヒューズ」.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--活動報告-->
+  <div id="activity">
+    <h1><span class="under">活動報告</span></h1>
+    <li>
+      <img src="images/glassdorm.jpg">
+      <h4>2019/05/25</h4>
+      <p>イヤリングの試作をしました！</p>
+    </li>
+
+    <li>
+      <img src="images/resin.jpg">
+      <h4>2019/05/22</h4>
+      <p>レジン初心者のメモいろいろ</p>
+    </li>
+
+    <li>
+      <img src="images/harbalium.jpg">
+      <h4>2019/05/15</h4>
+      <p>ハーバリウムの試作をしました！</p>
+    </li>
+
+    <div class="moreButton"><a href="activity.html">過去の活動報告</a></div>
+  </div>
+
+  <!--お問い合わせフォーム、mailtoが一番簡単-->
+  <div id="contact">
+    <h1><span class="under">お問い合わせ</span></h1>
+    <p>皆さんのこんなの合ったらいいな♪ こんな部品もかわいいんじゃない？も募集中です！</p>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDLwts7Mne7ddyGOypr2LceKjlYQlWJLtNhcJh94DRbdfxnA/viewform?embedded=true"
+            width="780" height="900" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
+  </div>
+
+</div>
+
+<footer>
+  このホームページに掲載されている一切の文書・図版・写真等を手段や形態を問わず複製・転載することを禁じます.<br>
+  ©2019　Cuteface.com　きゅんとふぇーす.</p>
+</footer>
 </body>
 </html>
