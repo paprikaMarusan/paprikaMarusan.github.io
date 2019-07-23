@@ -91,8 +91,8 @@
   }
 
   #mainVisual {
-    height: 850px;
-    background-image: url(../images/mainVisual.png);
+    height: 760px;
+    background-image: url(../images/mainVisual_mobile.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -404,8 +404,8 @@
   }
 
   #activityReport img {
-    width: 680px;
-    height: 420px;
+    width: 100%;
+    height: 300px;
     object-fit: cover;
     margin-bottom: 40px;
   }

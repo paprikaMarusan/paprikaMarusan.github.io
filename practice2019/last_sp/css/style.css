@@ -437,4 +437,9 @@
     text-align: center;
     font-size: 13px;
   }
+
+  .formCard{
+    width: 90%;
+    height: 840px;
+  }
 }
