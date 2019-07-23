@@ -8,7 +8,7 @@
   <!--サイト説明-->
   <meta name="description" content="[きゅんとふぇーす.com]大学の文化祭で電子部品を使ったアクセサリーを販売します！このサイトではサークルのお知らせや活動内容を発信していきたいです！">
 
-
+  <!--レスポンシブ-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 
@@ -29,6 +29,8 @@
   <link rel="stylesheet" media="(max-width: 760px)" href="css/style_mobile.css">
   <link rel="stylesheet" href="../../css/normalise.css">
 
+  <!--外部ファイル-->
+
   <!--ファビコン-->
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -43,12 +45,20 @@
   </div>
 
   <div class="gradientMenu">
-    <ul>
-      <li><a href="index.html#about">Cuteface?</a></li>
-      <li><a href="index.html#member">Member</a></li>
-      <li><a href="activity.html">Activity</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
+    <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span> </span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"> </label>
+
+      <div id="nav-content">
+        <ul>
+          <li><a href="index.html#about">Cuteface?</a></li>
+          <li><a href="index.html#member">Member</a></li>
+          <li><a href="activity.html">Activity</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>
 
