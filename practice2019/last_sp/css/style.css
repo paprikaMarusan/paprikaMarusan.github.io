@@ -541,4 +541,8 @@
     width: 90%;
     height: 840px;
   }
+
+  .formButton{
+    display: none;
+  }
 }
