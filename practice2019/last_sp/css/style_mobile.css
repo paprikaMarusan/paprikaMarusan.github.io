@@ -83,7 +83,7 @@
     position: fixed;
     z-index: 101;
     top: 20px;
-    right: 15px;
+    right: 10px;
   }
 
   .nav-unshown { /*チェックボックス非表示*/
@@ -100,8 +100,8 @@
   /*ハンバーガーアイコンの設定*/
   #nav-open span, #nav-open span:before, #nav-open span:after {
     position: absolute;
-    height: 3px; /*太さ*/
-    width: 40px; /*長さ*/
+    height: 2px; /*太さ*/
+    width: 34px; /*長さ*/
     border-radius: 2px;
     background: #FFFFFF;
     display: block;
@@ -148,13 +148,13 @@
 
   #nav-content li {
     position: relative;
-    margin-right: 20px;
-    right: 80px;
+    margin-right: 10px;
+    right: 60px;
     list-style: none;
     display: inline;
     line-height: 80px;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #nav-content a,
