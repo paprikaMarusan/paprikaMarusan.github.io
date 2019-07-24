@@ -17,7 +17,7 @@
   #member h1,
   #activity h1,
   #contact h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   h2 {
@@ -476,11 +476,6 @@
     box-shadow: 0 0 15px rgba(87, 87, 87, 0.15);
   }
 
-  /*上に戻るボタン*/
-  .upButton {
-
-  }
-
   /*アーカイブスページと進捗個別ページ*/
   #activityArchive {
     margin-top: 120px;
@@ -542,5 +537,35 @@
   .formCard{
     width: 90%;
     height: 460px;
+    display: none;
+  }
+
+  /*アクティビティのボタン*/
+  .formButton {
+    position: relative;
+    margin: 60px auto 20px auto;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #a3a3a3;
+    border-radius: 8px;
+    line-height: 40px;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.15);
+    transition: all .3s ease-in-out;
+  }
+
+  .formButton a,
+  .formButton a:visited {
+    text-decoration: none;
+    color: #63cdda;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .formButton:hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 0 15px rgba(87, 87, 87, 0.15);
   }
 }
