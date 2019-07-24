@@ -87,7 +87,7 @@
   #nav-drawer {
     position: fixed;
     z-index: 101;
-    top: 25px;
+    top: 35px;
     right: 15px;
   }
 
@@ -476,11 +476,6 @@
   .moreButton:hover {
     transition: all .2s ease-in-out;
     box-shadow: 0 0 15px rgba(87, 87, 87, 0.15);
-  }
-
-  /*上に戻るボタン*/
-  .upButton {
-
   }
 
   /*アーカイブスページと進捗個別ページ*/

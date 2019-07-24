@@ -189,12 +189,12 @@
 
   /*メインビジュアル*/
   #mainVisual {
-    background-color: #f8a5c2;
     height: 760px;
     background-image: url(../images/mainVisual_mobile.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: #f8a5c2;
     background-size: cover;
   }
 
