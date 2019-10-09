@@ -4,7 +4,7 @@
 最終課題で架空ゲームの紹介サイトを制作しました.<br>
 またpracticeディレクトリの中には最終課題までに行ったHTML,CSS,JSのファイルが入っています.
 
-#### 2019practice関連のフォルダには2019年度にSAとして制作した課題や演習のファイルが入っています.
+2019practice関連のフォルダには2019年度にSAとして制作した課題や演習のファイルが入っています.
 
 
 #### This repository was used for development of WEB site in college exercise in 2018!!
